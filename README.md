@@ -5,7 +5,6 @@
 ## [Programs & Experiments Development](https://kibsaimmejia.github.io/Programs)
 
 - [Restaurant Booking App: Development](https://kibsaimmejia.github.io/Programs/RestaurantBooking): Restaurant Booking App Development
-- [Random](https://kibsaimmejia.github.io/Programs/Random): Random Visualization Development
 
 ## How to run actually
 
@@ -33,7 +32,28 @@ wsl --shutdown
 docker --version
 docker-compose --version
 ```
+Everything is working?
+``` bash
+#!/bin/bash
 
+# Ping DuckDuckGo for 7 seconds
+ping -w 7 duckduckgo.com
+
+# Ping Wikipedia for 5 seconds
+ping -w 5 wikipedia.org
+
+# Ping GitHub for 3 seconds
+ping -w 3 github.com
+
+# Open http://localhost in the default system browser
+if which xdg-open > /dev/null; then
+   xdg-open http://localhost
+elif which gnome-open > /dev/null; then
+   gnome-open http://localhost
+else
+   echo "Please open http://localhost in your browser."
+fi
+```
 **Caution**: This script requires administrative privileges. Always review scripts from the internet before running them with elevated permissions.
 
 ...
