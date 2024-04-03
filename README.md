@@ -10,6 +10,8 @@
 
 ### Setup
 
+**Caution**: This script requires administrative privileges. Always review scripts from the internet before running them with elevated permissions.
+
 ``` bash
 sudo apt update && \
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common && \
@@ -142,8 +144,6 @@ else
    echo "Please open http://localhost in your browser."
 fi
 ```
-**Caution**: This script requires administrative privileges. Always review scripts from the internet before running them with elevated permissions.
-
-...
+---
 
 with passion by Kibsiam Mejia.
