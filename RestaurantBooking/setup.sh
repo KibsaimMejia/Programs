@@ -39,20 +39,38 @@ sudo apt-get install -y nodejs
 node -v
 npm -v
 
-# Clone the application repository (replace `your-repository-url` with the actual repository URL)
+# Clone the application repository
 git clone https://github.com/KibsaimMejia/Programs/
 cd Programs/RestaurantBooking
 
 # Backend setup
 cd backend
-mvn package
+mvn package # Packages the backend application. Assumes Maven is installed.
 
-# Frontend setup is handled by Docker
+# Note: No explicit frontend setup command here since it's handled by Docker.
 
 # E2E Testing setup
 cd ../e2e
-npm install
+npm install # Installs e2e testing dependencies. Assumes Node.js and npm are installed.
 
 # Running the application with Docker Compose
-cd ..
-docker-compose up --build
+cd .. # Make sure to navigate back to the root directory of the project
+docker-compose up --build # Builds and starts the Docker containers. Use 'sudo' if necessary.
+# Clone the application repository
+git clone https://github.com/KibsaimMejia/Programs/
+cd Programs/RestaurantBooking
+
+# Backend setup
+cd backend
+mvn package # Packages the backend application. Assumes Maven is installed.
+
+# Note: No explicit frontend setup command here since it's handled by Docker.
+
+# E2E Testing setup
+cd ../e2e
+npm install # Installs e2e testing dependencies. Assumes Node.js and npm are installed.
+
+# Running the application with Docker Compose
+cd .. # Make sure to navigate back to the root directory of the project
+docker-compose up --build # Builds and starts the Docker containers. Use 'sudo' if necessary.
+
