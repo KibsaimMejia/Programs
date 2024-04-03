@@ -2,11 +2,11 @@
 layout: default
 title: Programs & Experiments
 ---
-# Kibsaim Mejia
+# Kibsaim Mejia's Programs & Experiments 
 
 Programs & Experiments is a comprehensive repository for all public programs and experiments! Crafted with docker-compose for seamless operation on Debian/Linux.
 
-## [Programs & Experiments](https://github.com/KibsaimMejia/Programs/blob/main/RestaurantBooking/README.md): README | Código Fuente
+![Restaurant Booking App](IMAGE_URL)
 
 ## How to run
 
@@ -26,6 +26,7 @@ chmod +x setup.sh
 ![Restaurant Booking App](IMAGE_URL)
 
 **Live Developer Demo:** [Visit Website](https://KibsaimMejia.github.io/Programs/RestaurantBooking)
+
 **Source Code:** [View on GitHub](https://github.com/KibsaimMejia/Programs/blob/main/RestaurantBooking/README.md)
 
 ### Description
