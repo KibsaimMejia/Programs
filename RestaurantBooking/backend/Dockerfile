@@ -9,7 +9,7 @@ COPY pom.xml .
 RUN mvn dependency:go-offline
 
 # Copy the rest of the project
-COPY src ./src
+COPY . .
 
 # Package the application into a runnable jar file, skipping tests to speed up the build
 RUN mvn package -DskipTests
