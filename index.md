@@ -2,7 +2,7 @@
 layout: default
 title: Programs & Experiments
 ---
-# [Programs & Experiments](https://github.com/Kibzai/Programs/): Código Fuente | Readme | Experimentos
+# [Programs & Experiments](https://kibsaimmejia.github.io/Programs/README): README | Código Fuente
 
 ## How to run
 
