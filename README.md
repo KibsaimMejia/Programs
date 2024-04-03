@@ -8,10 +8,8 @@
 
 ## How to run actually
 
-``` bash
-# Windows: Right click on Start icon and select "Command Prompt (Admin)"
-wsl --install
-```
+### Setup
+
 ``` bash
 sudo apt update && \
 sudo apt install -y apt-transport-https ca-certificates curl software-properties-common && \
@@ -24,9 +22,99 @@ sudo usermod -aG docker $USER && \
 sudo apt install -y nginx && \
 sudo systemctl start nginx && sudo systemctl enable nginx
 ```
-Other scripts
+
+## Help
+
 ``` bash
-wsl --shutdown
+# Windows: Right click on Start icon and select "Command Prompt (Admin)"
+wsl --install
+```
+Server Management Script
+``` bash
+#!/bin/bash
+
+# This script provides a basic management toolkit for an NGINX server
+# running on WSL with Ubuntu and includes resource management,
+# updating, SSH access, and storage synchronization/access with Windows.
+
+# Update System and NGINX
+update_system_and_nginx() {
+  echo "Updating system and NGINX..."
+  sudo apt-get update && sudo apt-get upgrade -y
+  sudo apt-get install nginx -y
+  echo "System and NGINX have been updated."
+}
+
+# Start NGINX Service
+start_nginx() {
+  echo "Starting NGINX..."
+  sudo service nginx start
+  echo "NGINX started."
+}
+
+# Stop NGINX Service
+stop_nginx() {
+  echo "Stopping NGINX..."
+  sudo service nginx stop
+  echo "NGINX stopped."
+}
+
+# Restart NGINX Service
+restart_nginx() {
+  echo "Restarting NGINX..."
+  sudo service nginx restart
+  echo "NGINX restarted."
+}
+
+# Enable NGINX Service
+enable_nginx() {
+  echo "Enabling NGINX to start on boot..."
+  sudo systemctl enable nginx
+  echo "NGINX will now start on boot."
+}
+
+# Disable NGINX Service
+disable_nginx() {
+  echo "Disabling NGINX from starting on boot..."
+  sudo systemctl disable nginx
+  echo "NGINX will not start on boot."
+}
+
+# Edit NGINX Configuration
+edit_nginx_config() {
+  echo "Opening NGINX configuration for editing..."
+  sudo nano /etc/nginx/nginx.conf
+}
+
+# Monitor Resource Usage
+monitor_resources() {
+  echo "Monitoring resource usage..."
+  top
+}
+
+# Sync Storage with Windows
+# Ensure that the Windows filesystem is mounted correctly in WSL.
+sync_storage_with_windows() {
+  echo "Syncing storage with Windows..."
+  rsync -av --progress /mnt/c/Users/<YourWindowsUsername>/<WindowsDirectory> /home/<YourWSLUsername>/<TargetDirectory>
+  echo "Storage sync complete."
+}
+
+# Access WSL via SSH (Assuming SSH is set up and configured)
+access_via_ssh() {
+  echo "Accessing WSL via SSH..."
+  ssh <YourWSLUsername>@<WSL_IP_Address>
+}
+
+# Replace <YourWindowsUsername>, <WindowsDirectory>, <YourWSLUsername>, <TargetDirectory>, and <WSL_IP_Address> with your specific details.
+
+# To use this script, save it as manage_nginx.sh and run it from your WSL terminal.
+# Make sure to give it executable permissions with: chmod +x manage_nginx.sh
+# Then execute the function you need, e.g., ./manage_nginx.sh update_system_and_nginx
+
+```
+``` bash
+wls --shutdown
 ```
 ``` bash
 docker --version
