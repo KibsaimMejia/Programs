@@ -5,33 +5,38 @@ body.dark-mode {
     background-color: #000;
     font-family: 'Courier New', Courier, monospace;
     color: #e0e0e0;
-    margin: 3rem;
-    font-size: 1.333rem;
+    margin: 0; /* Adjusted for better view on all devices */
+    font-size: calc(1rem + 0.5vw); /* Dynamic font size for better readability */
 }
 
 body.dark-mode a {
-    color: #a7d129;
+    color: #9AD430; /* Brighter shade for better visibility */
 }
 
 body.dark-mode .content {
     background-color: #111;
-    padding: 5rem;
+    padding: 2rem; /* Adjusted padding for all devices */
+    margin: 1rem; /* Added margin for better spacing */
+    border-radius: 8px; /* Added border-radius for aesthetic appeal */
 }
 
 li {
     background: #1b1919;
     padding: 1rem;
+    margin-bottom: 0.5rem; /* Adds space between list items */
+    border-radius: 4px; /* Smoothens the edges of list items */
 }
 li:nth-child(odd) { background: #222; }
 
 /* Code Block Styling with Wrap */
-body.dark-mode pre{
+body.dark-mode pre {
     background-color: #000;
     padding: 1rem;
     overflow-x: auto; /* Enables horizontal scrolling for long lines */
     white-space: pre-wrap; /* Ensures wrapping of long lines */
     word-wrap: break-word;
-    color: #a7d129;
+    color: #9AD430; /* Color adjusted for better contrast and visibility */
+    border-radius: 4px; /* Added for consistency with other elements */
 }
 
 /* Code Block Styling */
@@ -39,25 +44,29 @@ body.dark-mode code {
     overflow-x: auto; /* Enables horizontal scrolling for long lines */
     white-space: pre-wrap; /* Ensures wrapping of long lines */
     word-wrap: break-word;
-    line-height: 2;
+    line-height: 1.6; /* Adjusted line height for better readability */
+    display: block; /* Ensures block display for better structure */
+    padding: 0.5rem; /* Adds padding inside code blocks */
+    margin: 0.5rem 0; /* Adds margin around code blocks for spacing */
+    background-color: #121212; /* Slightly different background for emphasis */
+    border-radius: 4px; /* Consistency in design */
 }
 
 /* Copy Button Styling */
 .copy-btn {
     position: relative;
-    float: right;
-    top: 10px;
-    right: 10px;
-    background-color: #a7d129;
-    color: white;
+    background-color: #9AD430;
+    color: #000; /* Changed text color for better contrast */
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    padding: 5px 10px;
-    font-size: 0.8em;
+    padding: 8px 15px; /* Increased padding for easier interaction */
+    font-size: calc(0.8em + 0.1vw); /* Dynamic font size */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Added shadow for depth */
 }
 
 /* Hover Effect for Copy Button */
 .copy-btn:hover {
-    background-color: #616f39;
+    background-color: #88C023; /* Subtle change on hover for feedback */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Enhanced shadow for hover effect */
 }
