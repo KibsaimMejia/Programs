@@ -40,7 +40,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>RestaurantBookingApplication</mainClass>
+                            <mainClass>com.Restaurant.RestaurantBookingApplication</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
