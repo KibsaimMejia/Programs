@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #121212; color: white;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking</title>
+</head>
+<body>
+    <h1>Restaurant Booking</h1>
+    <div id="bookingForm">
+        <input type="text" id="customerName" placeholder="Customer Name" />
+        <input type="number" id="tableSize" placeholder="Table Size" />
+        <input type="date" id="date" />
+        <input type="time" id="time" />
+        <button onclick="submitBooking()">Book Table</button>
+    </div>
+    <script>
+        async function submitBooking() {
+            const booking = {
+                customerName: document.getElementById('customerName').value,
+                tableSize: parseInt(document.getElementById('tableSize').value),
+                date: document.getElementById('date').value,
+                time: document.getElementById('time').value,
+            };
+            await fetch('/bookings', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(booking),
+            });
+            alert('Booking submitted');
+        }
+    </script>
+</body>
+</html>
