@@ -38,7 +38,7 @@ A user-friendly platform that enables customers to reserve tables at restaurants
 
 ### Random App
 
-...
+- [Random Visualization App: In Development](https://kibsaimmejia.github.io/Programs/Random)
 
 ---
 
