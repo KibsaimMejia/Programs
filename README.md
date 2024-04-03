@@ -9,7 +9,7 @@
 ## How to run
 
 ``` bash
-wget -O setup.sh https://github.com/KibsaimMejia/Programs/blob/main/setup.sh
+wget -O setup.sh https://kibsaimmejia.github.io/Programs/setup.sh
 chmod +x setup.sh
 ./setup.sh
 ```
