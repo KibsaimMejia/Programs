@@ -8,7 +8,7 @@ This application provides a simple platform for customers to book tables at a re
 
 ``` bash
 # [LOCAL DEV](http://localhost:3000?)
-wget -O setup.sh https://github.com/KibsaimMejia/Programs/RestaurantBooking/setup.sh
+wget -O setup.sh https://github.com/KibsaimMejia/Programs/blob/main/RestaurantBooking/setup.sh
 chmod +x setup.sh
 ./setup.sh
 ```
