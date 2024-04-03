@@ -12,7 +12,7 @@ Programs & Experiments is a comprehensive repository for all public programs and
 
 ``` bash
 # [Link!](https://kibsaimmejia.github.io/Programs/)
-wget -O setup.sh https://github.com/KibsaimMejia/Programs/blob/main/setup.sh
+wget -O setup.sh https://kibsaimmejia.github.io/Programs/setup.sh
 chmod +x setup.sh
 ./setup.sh
 ```
