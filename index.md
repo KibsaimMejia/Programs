@@ -22,8 +22,7 @@ chmod +x setup.sh
 ![Restaurant Booking App](IMAGE_URL)
 
 **Live Developer Demo:** [Visit Website](https://KibsaimMejia.github.io/Programs/RestaurantBooking)
-
-**Source Code:** [View on GitHub](https://github.com/KibsaimMejia/Programs/RestaurantBooking)
+**Source Code:** [View on GitHub](https://github.com/KibsaimMejia/Programs/blob/main/RestaurantBooking/README.md)
 
 ### Description
 A user-friendly platform that enables customers to reserve tables at restaurants and allows owners to manage bookings efficiently for any given day. This application leverages the power of the MuServer framework for its backend services and utilizes Vanilla JavaScript for a streamlined and responsive frontend, focusing on simplicity without sacrificing functionality.
