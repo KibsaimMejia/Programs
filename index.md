@@ -25,7 +25,7 @@ chmod +x setup.sh
 
 ## Listed Programs
 
-- ### Restaurant Booking App
+### Restaurant Booking App
 
 ![Restaurant Booking App: Development](IMAGE_URL)
 
@@ -40,7 +40,7 @@ A user-friendly platform that enables customers to reserve tables at restaurants
 
 ## Listed Experiments
 
-- ### Random App
+### Random App
 
 ![Random: Development](IMAGE_URL)
 
