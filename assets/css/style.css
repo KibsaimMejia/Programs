@@ -24,6 +24,9 @@ li {
 }
 li:nth-child(odd) { background: #222; }
 
+img {
+    max-width: 100%;
+}
 /* Code Block Styling with Wrap */
 body.dark-mode pre{
     background-color: #000;
