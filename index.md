@@ -1,4 +1,4 @@
-![Default_river_of_cables_internet_cpus_programming_languajes_le_1](https://github.com/KibsaimMejia/Programs/assets/158346959/64ba50d6-2daf-4f7a-ba2e-0a31655ddce4)---
+---
 layout: default
 title: Programs & Experiments - Kibsaim Mejia 
 ---
