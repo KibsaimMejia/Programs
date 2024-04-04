@@ -12,6 +12,8 @@ This is a comprehensive repository for all public programs and experiments! Craf
 
 ## **Programs & Experiments**: Setup Docker Server
 
+Docker Compose Nginx Server
+
 ### How to run
 
 ``` bash
@@ -27,7 +29,7 @@ chmod +x setup.sh
 
 ### Restaurant Booking App
 
-![Restaurant Booking App: Development](IMAGE_URL)
+![Restaurant Booking App: Development Image](IMAGE_URL)
 
 **Live Developer Demo:** [Visit Website](https://KibsaimMejia.github.io/Programs/RestaurantBooking)
 
@@ -42,7 +44,7 @@ A user-friendly platform that enables customers to reserve tables at restaurants
 
 ### Random App
 
-![Random: Development](IMAGE_URL)
+![Random: Development Image](IMAGE_URL)
 
 **Live Developer Demo:** [Visit Website](https://KibsaimMejia.github.io/Programs/Random)
 
