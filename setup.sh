@@ -36,4 +36,4 @@ sudo systemctl start nginx && sudo systemctl enable nginx
 # Open Nginx configuration in a text editor. Replace 'nano' with your preferred editor if necessary.
 # sudo nano /etc/nginx/sites-available/default
 # OR for a more interactive GUI editor, you can use 'gedit' if you are in a graphical environment:
-sudo gedit /etc/nginx/sites-available/default
+# sudo gedit /etc/nginx/sites-available/default
