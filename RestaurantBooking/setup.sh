@@ -39,10 +39,6 @@ sudo apt-get install -y nodejs
 node -v
 npm -v
 
-# Clone the application repository
-git clone https://github.com/KibsaimMejia/Programs/
-cd Programs/RestaurantBooking
-
 # Backend setup
 cd backend
 mvn package # Packages the backend application. Assumes Maven is installed.
