@@ -1,29 +1,29 @@
 ---
 layout: default
-title: Programs & Experiments
+title: Programs & Experiments: Kibsaim Mejia 
 ---
-# Kibsaim Mejia's Programs & Experiments 
+# Programs & Experiments
 
-Programs & Experiments is a comprehensive repository for all public programs and experiments! Crafted with docker-compose for seamless operation on Debian/Linux.
+**Programs & Experiments** is a comprehensive repository for all public programs and experiments! Crafted with docker-compose for seamless operation on Debian/Linux.
 
-![Restaurant Booking App](IMAGE_URL)
+![Experiments](IMAGE_URL)
 
-## How to run
+## Programs
 
+### Setup: Docker Server
+
+#### How to run
+
+[Caution: This script requires administrative privileges. Always review scripts from the internet before running them with elevated permissions.](https://kibsaimmejia.github.io/Programs/)
 ``` bash
-# [Link!](https://kibsaimmejia.github.io/Programs/)
 wget -O setup.sh https://kibsaimmejia.github.io/Programs/setup.sh
 chmod +x setup.sh
 ./setup.sh
 ```
 
----
-
-## Programs
-
 ### Restaurant Booking App
 
-![Restaurant Booking App](IMAGE_URL)
+![Restaurant Booking App: Development](IMAGE_URL)
 
 **Live Developer Demo:** [Visit Website](https://KibsaimMejia.github.io/Programs/RestaurantBooking)
 
@@ -38,8 +38,13 @@ A user-friendly platform that enables customers to reserve tables at restaurants
 
 ### Random App
 
-- [Random Visualization App: In Development](https://kibsaimmejia.github.io/Programs/Random)
+![Random: Development](IMAGE_URL)
+
+**Live Developer Demo:** [Visit Website](https://KibsaimMejia.github.io/Programs/Random)
+
+**Source Code:** [View on GitHub](https://github.com/KibsaimMejia/Programs/blob/main/Random/README.md)
+
+### Description
+Random Visualizations.
 
 ---
-
-[Programs & Experiments](https://kibsaimmejia.github.io/Programs)
