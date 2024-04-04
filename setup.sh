@@ -1,4 +1,8 @@
-# Windows/WSL/Ubuntu Linux Setup
+# Linux Setup
+
+# Clone the application repository
+git clone https://github.com/KibsaimMejia/Programs/
+cd Programs
 
 # Update and upgrade the system
 sudo apt-get update && sudo apt-get upgrade -y
