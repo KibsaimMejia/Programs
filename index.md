@@ -1,12 +1,14 @@
 ---
 layout: default
-title: Programs & Experiments: Kibsaim Mejia 
+title: Programs & Experiments - Kibsaim Mejia 
 ---
 # Programs & Experiments
 
 This is a comprehensive repository for all public programs and experiments! Crafted with docker-compose for seamless operation on Debian/Linux.
 
 ![Experiments: gif](IMAGE_URL)
+
+---
 
 ## **Programs & Experiments**: Setup Docker Server
 
@@ -19,7 +21,11 @@ chmod +x setup.sh
 ```
 [Caution](https://kibsaimmejia.github.io/Programs/): This script requires administrative privileges. Always review scripts from the internet before running them with elevated permissions.
 
-### Restaurant Booking App
+---
+
+## Listed Programs
+
+- ### Restaurant Booking App
 
 ![Restaurant Booking App: Development](IMAGE_URL)
 
@@ -32,9 +38,9 @@ A user-friendly platform that enables customers to reserve tables at restaurants
 
 ---
 
-## Experiments
+## Listed Experiments
 
-### Random App
+- ### Random App
 
 ![Random: Development](IMAGE_URL)
 
