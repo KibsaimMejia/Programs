@@ -10,7 +10,7 @@ body.dark-mode {
 }
 
 body.dark-mode a {
-    color: #a7d129;
+    color: #0092ca;
 }
 
 body.dark-mode .content {
@@ -34,7 +34,7 @@ body.dark-mode pre{
     overflow-x: auto; /* Enables horizontal scrolling for long lines */
     white-space: pre-wrap; /* Ensures wrapping of long lines */
     word-wrap: break-word;
-    color: #a7d129;
+    color: #0092ca;
 }
 
 /* Code Block Styling */
@@ -51,7 +51,7 @@ body.dark-mode code {
     float: right;
     top: 10px;
     right: 10px;
-    background-color: #a7d129;
+    background-color: #0092ca;
     color: white;
     border: none;
     border-radius: 3px;
