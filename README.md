@@ -4,15 +4,17 @@
 
 ## Development Website
 
-[Programs & Experiments Development Website](https://kibsaimmejia.github.io/Programs)
+[Programs & Experiments: Development](https://kibsaimmejia.github.io/Programs): Simple Nginx Server.
 
 ### Listed Programs
 
-- [Restaurant Booking App: Development](https://kibsaimmejia.github.io/Programs/RestaurantBooking): Restaurant Booking App Development
+- [Restaurant Booking App: Development](https://kibsaimmejia.github.io/Programs/RestaurantBooking): Restaurant Booking App Development.
 
 ### Listed Experiments
 
-- [Random: Development](https://kibsaimmejia.github.io/Programs/Random): Random Visualization
+- [Random: Development](https://kibsaimmejia.github.io/Programs/Random): Random Visualizations.
+
+---
 
 ## Instructions - How to run actually
 
