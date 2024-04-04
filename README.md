@@ -4,7 +4,7 @@
 
 ## Development Website
 
-[Programs & Experiments: Development](https://github.com/KibsaimMejia/Programs): Docker Compose Nginx Server.
+[Programs & Experiments: Website](https://kibsaimmejia.github.io/Programs/): Docker Compose Nginx Server.
 
 ### Listed Programs
 
@@ -19,6 +19,8 @@
 ## Instructions - How to run actually
 
 ### Setup
+
+This is the script inicluded in the ./setup.sh file.
 
 **Caution**: This script requires administrative privileges. Always review scripts from the internet before running them with elevated permissions.
 
@@ -90,7 +92,6 @@ fi
 ```
 Install WSL (Windows: Right click on Start icon and select "Power Shell (Admin)")
 ``` powershell
-# 
 wsl --install
 ```
 Server Management Script
