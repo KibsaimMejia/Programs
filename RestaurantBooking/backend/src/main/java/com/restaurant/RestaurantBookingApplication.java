@@ -1,3 +1,4 @@
+package com.restaurant;
 import io.muserver.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -12,12 +13,13 @@ public class RestaurantBookingApplication {
     private static final Map<LocalDate, List<Booking>> bookings = new ConcurrentHashMap<>();
 
     public static void main(String[] args) {
-        MuServer server = MuServerBuilder.httpServer()
+        MuServer server = MuServerBuilder.httpServer().withHttpPort(8080)
                 .addHandler(Method.GET, "/bookings/{date}", (request, response, pathParams) -> {
                     LocalDate date = LocalDate.parse(pathParams.get("date"));
                     List<Booking> bookingsForDate = bookings.getOrDefault(date, Collections.emptyList());
                     JSONArray bookingsJson = new JSONArray(bookingsForDate);
-                    response.contentType("application/json").write(bookingsJson.toString());
+                    response.contentType("application/json");
+                    response.write(bookingsJson.toString());
                 })
                 .addHandler(Method.POST, "/bookings", (request, response, pathParams) -> {
                     JSONObject bookingRequest = new JSONObject(request.readBodyAsString());
@@ -26,7 +28,8 @@ public class RestaurantBookingApplication {
                             LocalDate.parse(bookingRequest.getString("date")),
                             bookingRequest.getString("time"));
                     bookings.computeIfAbsent(booking.date, k -> new ArrayList<>()).add(booking);
-                    response.status(201).write("{}");
+                    response.status(201);
+                    response.write("{}");
                 })
                 .start();
         System.out.println("Started server at " + server.uri());
