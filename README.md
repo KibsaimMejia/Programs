@@ -4,15 +4,15 @@
 
 ## Development Website
 
-[Programs & Experiments: Development](https://kibsaimmejia.github.io/Programs): Docker Compose Nginx Server.
+[Programs & Experiments: Development](https://github.com/KibsaimMejia/Programs): Docker Compose Nginx Server.
 
 ### Listed Programs
 
-- [Restaurant Booking App: Development](https://kibsaimmejia.github.io/Programs/RestaurantBooking): Restaurant Booking App Development.
+- [Restaurant Booking App: Development](https://github.com/KibsaimMejia/Programs/RestaurantBooking): Restaurant Booking App Development.
 
 ### Listed Experiments
 
-- [Random: Development](https://kibsaimmejia.github.io/Programs/Random): Random Visualizations.
+- [Random: Development](https://github.com/KibsaimMejia/Programs/Random): Random Visualizations.
 
 ---
 
@@ -23,22 +23,74 @@
 **Caution**: This script requires administrative privileges. Always review scripts from the internet before running them with elevated permissions.
 
 ``` bash
+# Clone the application repository
+git clone https://github.com/KibsaimMejia/Programs/
+cd Programs
+
+# Update and upgrade the system
+sudo apt-get update && sudo apt-get upgrade -y
+
+# Install dependencies for Docker
 sudo apt update && \
-sudo apt install -y apt-transport-https ca-certificates curl software-properties-common && \
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && \
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" && \
-sudo apt update && \
-sudo apt install -y docker-ce docker-compose && \
-sudo systemctl start docker && sudo systemctl enable docker && \
-sudo usermod -aG docker $USER && \
-sudo apt install -y nginx && \
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+
+# Add Docker’s official GPG key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# Add Docker repository to APT sources
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+# Update the package database with Docker packages from the newly added repo
+sudo apt update
+
+# Install Docker CE (Community Edition)
+sudo apt install -y docker-ce docker-compose
+
+# Start Docker and enable it to run at boot
+sudo systemctl start docker && sudo systemctl enable docker
+
+# Add your user to the Docker group to run Docker commands without sudo
+sudo usermod -aG docker $USER
+
+# Install Nginx
+sudo apt install -y nginx
+
+# Start Nginx and enable it to run at boot
 sudo systemctl start nginx && sudo systemctl enable nginx
+
+# Open Nginx configuration in a text editor. Replace 'nano' with your preferred editor if necessary.
+# sudo nano /etc/nginx/sites-available/default
+# OR for a more interactive GUI editor, you can use 'gedit' if you are in a graphical environment:
+# sudo gedit /etc/nginx/sites-available/default
 ```
 
 ## Help
 
+Is Everything working?
 ``` bash
-# Windows: Right click on Start icon and select "Command Prompt (Admin)"
+#!/bin/bash
+
+# Ping DuckDuckGo for 7 seconds
+ping -w 7 duckduckgo.com
+
+# Ping Wikipedia for 5 seconds
+ping -w 5 wikipedia.org
+
+# Ping GitHub for 3 seconds
+ping -w 3 github.com
+
+# Open http://localhost in the default system browser
+if which xdg-open > /dev/null; then
+   xdg-open http://localhost
+elif which gnome-open > /dev/null; then
+   gnome-open http://localhost
+else
+   echo "Please open http://localhost in your browser."
+fi
+```
+Install WSL (Windows: Right click on Start icon and select "Power Shell (Admin)")
+``` powershell
+# 
 wsl --install
 ```
 Server Management Script
@@ -128,31 +180,10 @@ access_via_ssh() {
 ``` bash
 wls --shutdown
 ```
+Check Versions
 ``` bash
 docker --version
 docker-compose --version
-```
-Everything is working?
-``` bash
-#!/bin/bash
-
-# Ping DuckDuckGo for 7 seconds
-ping -w 7 duckduckgo.com
-
-# Ping Wikipedia for 5 seconds
-ping -w 5 wikipedia.org
-
-# Ping GitHub for 3 seconds
-ping -w 3 github.com
-
-# Open http://localhost in the default system browser
-if which xdg-open > /dev/null; then
-   xdg-open http://localhost
-elif which gnome-open > /dev/null; then
-   gnome-open http://localhost
-else
-   echo "Please open http://localhost in your browser."
-fi
 ```
 ---
 
