@@ -22,8 +22,8 @@ WORKDIR /app
 COPY --from=builder /app/target/*.jar /app/RestaurantBookingApplication.jar
 
 # Specify a non-root user to run the application (enhances security)
-RUN addgroup --system spring && adduser --system spring --ingroup spring
-USER spring:spring
+# RUN addgroup --system spring && adduser --system spring --ingroup spring
+# USER spring:spring
 
 # Command to run the application
 CMD ["java", "-jar", "/app/RestaurantBookingApplication.jar"]
