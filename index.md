@@ -4,22 +4,20 @@ title: Programs & Experiments: Kibsaim Mejia
 ---
 # Programs & Experiments
 
-**Programs & Experiments** is a comprehensive repository for all public programs and experiments! Crafted with docker-compose for seamless operation on Debian/Linux.
+This is a comprehensive repository for all public programs and experiments! Crafted with docker-compose for seamless operation on Debian/Linux.
 
-![Experiments](IMAGE_URL)
+![Experiments: gif](IMAGE_URL)
 
-## Programs
+## **Programs & Experiments**: Setup Docker Server
 
-### Setup: Docker Server
+### How to run
 
-#### How to run
-
-[Caution: This script requires administrative privileges. Always review scripts from the internet before running them with elevated permissions.](https://kibsaimmejia.github.io/Programs/)
 ``` bash
 wget -O setup.sh https://kibsaimmejia.github.io/Programs/setup.sh
 chmod +x setup.sh
 ./setup.sh
 ```
+[Caution](https://kibsaimmejia.github.io/Programs/): This script requires administrative privileges. Always review scripts from the internet before running them with elevated permissions.
 
 ### Restaurant Booking App
 
