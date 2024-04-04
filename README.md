@@ -4,7 +4,7 @@
 
 ## Development Website
 
-[Programs & Experiments: Development](https://kibsaimmejia.github.io/Programs): Simple Nginx Server.
+[Programs & Experiments: Development](https://kibsaimmejia.github.io/Programs): Docker Compose Nginx Server.
 
 ### Listed Programs
 
