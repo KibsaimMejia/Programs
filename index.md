@@ -6,8 +6,6 @@ title: Programs & Experiments - Kibsaim Mejia
 
 This is a comprehensive repository for all public programs and experiments! Crafted with docker-compose for seamless operation on Debian/Linux.
 
-![River_of_cables_internet_cpus_programming_languajes](https://github.com/KibsaimMejia/Programs/assets/158346959/0acc8af0-460c-44d6-bd9f-691a6c4331d9)
-
 ---
 
 ## **Programs & Experiments**: Setup Docker Server
@@ -54,3 +52,5 @@ A user-friendly platform that enables customers to reserve tables at restaurants
 Random Visualizations.
 
 ---
+
+![River_of_cables_internet_cpus_programming_languajes](https://github.com/KibsaimMejia/Programs/assets/158346959/0acc8af0-460c-44d6-bd9f-691a6c4331d9)
