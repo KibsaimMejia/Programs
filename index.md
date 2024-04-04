@@ -1,4 +1,4 @@
----
+![Default_river_of_cables_internet_cpus_programming_languajes_le_1](https://github.com/KibsaimMejia/Programs/assets/158346959/64ba50d6-2daf-4f7a-ba2e-0a31655ddce4)---
 layout: default
 title: Programs & Experiments - Kibsaim Mejia 
 ---
@@ -6,7 +6,7 @@ title: Programs & Experiments - Kibsaim Mejia
 
 This is a comprehensive repository for all public programs and experiments! Crafted with docker-compose for seamless operation on Debian/Linux.
 
-![Experiments: gif](IMAGE_URL)
+![River_of_cables_internet_cpus_programming_languajes](https://github.com/KibsaimMejia/Programs/assets/158346959/0acc8af0-460c-44d6-bd9f-691a6c4331d9)
 
 ---
 
