@@ -4,8 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Booking</title>
+    <title>Note Taking App</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        input[type="text"], input[type="date"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -30,67 +43,59 @@
 </head>
 
 <body>
-    <h1>Restaurant Booking</h1>
-    <div id="bookingForm">
-        <input type="text" id="customerName" placeholder="Customer Name" />
-        <input type="number" id="tableSize" placeholder="Table Size" />
-        <input type="date" id="date" />
-        <input type="time" id="time" />
-        <button onclick="submitBooking()">Book Table</button>
+    <h1>Note Taking App</h1>
+    <div>
+        <input type="text" id="noteTitle" placeholder="Title" />
+        <textarea id="noteContent" placeholder="Write your note here..." rows="5"></textarea>
+        <button onclick="submitNote()">Add Note</button>
     </div>
 
-    <h2>All Bookings</h2>
-    <div id="bookingsTable">
-        <!-- Bookings will be loaded here -->
+    <h2>Notes</h2>
+    <div id="notesTable">
+        <!-- Notes will be displayed here -->
     </div>
 
     <script>
-        async function submitBooking() {
-            const booking = {
-                customerName: document.getElementById('customerName').value,
-                tableSize: parseInt(document.getElementById('tableSize').value),
-                date: document.getElementById('date').value,
-                time: document.getElementById('time').value,
+        async function submitNote() {
+            const note = {
+                title: document.getElementById('noteTitle').value,
+                content: document.getElementById('noteContent').value,
             };
 
-            await fetch('/bookings', {
+            await fetch('/notes', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(booking),
+                body: JSON.stringify(note),
             });
 
-            alert('Booking submitted');
-            loadBookings(); // Reload bookings to update the list
+            alert('Note added');
+            loadNotes(); // Reload notes to update the list
         }
 
-        async function loadBookings() {
-            const response = await fetch('/bookings');
-            const bookings = await response.json();
+        async function loadNotes() {
+            const response = await fetch('/notes');
+            const notes = await response.json();
             const table = `
                 <table>
                     <tr>
-                        <th>Customer Name</th>
-                        <th>Table Size</th>
-                        <th>Date</th>
-                        <th>Time</th>
+                        <th>Title</th>
+                        <th>Content</th>
                     </tr>
-                    ${bookings.map(booking => `
+                    ${notes.map(note => `
                         <tr>
-                            <td>${booking.customerName}</td>
-                            <td>${booking.tableSize}</td>
-                            <td>${booking.date}</td>
-                            <td>${booking.time}</td>
+                            <td>${note.title}</td>
+                            <td>${note.content}</td>
                         </tr>
                     `).join('')}
                 </table>
             `;
-            document.getElementById('bookingsTable').innerHTML = table;
+            document.getElementById('notesTable').innerHTML = table;
         }
 
-        // Load bookings when the page loads
-        window.onload = loadBookings;
+        // Load notes when the page loads
+        window.onload = loadNotes;
     </script>
 </body>
 </html>
